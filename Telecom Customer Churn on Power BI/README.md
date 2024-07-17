@@ -28,21 +28,22 @@ Since, a revenue loss of $3.68 million is anticipated due to a customer churn ra
 - Step 12 : Several  Calculated column were created . They are given below.
 
    1.Tenure in months  was converted into tenure in years using conditional column.
-![tenure in years convertion](https://github.com/user-attachments/assets/532b45f1-f623-47c1-bf55-4519d8f9de71)
+![tenure in years convertion](https://github.com/user-attachments/assets/3eaf53a2-c513-4dc7-801c-781d725c69c7)
    
    2.Customer Status was converted to churn category using conditional column.
-![Conditional column](https://github.com/user-attachments/assets/36a022f4-bea0-4c4b-8e0b-4cdd4081c004)
+![Customer Status](https://github.com/user-attachments/assets/69fd2973-8f90-41c8-a0bc-e18578c00e07)
    
    3.Senior citizen column was calculated from age column using conditional column.
-   ![senior citizen](https://github.com/user-attachments/assets/07257a87-9673-4f92-a52a-f2448e2a829f)
+   ![senior citizen](https://github.com/user-attachments/assets/f71eeaf2-90f3-406d-a7c6-75820356d8c1)
 
    4.Dependent was also calculated from number of Dependents using conditional column.
-   ![Dependent](https://github.com/user-attachments/assets/3e7ccf24-4fe8-4beb-b9f1-af0a6f8fb217)
+   ![Dependent](https://github.com/user-attachments/assets/836581c9-a1d0-4817-b7d0-139ab772456e)
    
    5.Number of Referal  was also calculated from Referal  using conditional column.
-   ![Referal](https://github.com/user-attachments/assets/109bf619-9a50-4c05-a5e2-294f776a0dc7)
+   ![Referal](https://github.com/user-attachments/assets/3836d529-6640-4435-ad2e-17909f666f7b)
+
    6.Replaced null values from Internet type column to No .
-   ![replace](https://github.com/user-attachments/assets/c7c91a96-6a2f-4fc4-b2f6-1578a0f9f55d)
+  ![replace](https://github.com/user-attachments/assets/98abc469-453a-453b-8c7b-0c2da00eb52b)
 
 - Step 13 : New measures were created using dax .
 
@@ -106,12 +107,13 @@ Since, a revenue loss of $3.68 million is anticipated due to a customer churn ra
  # Report Snapshot (Power BI DESKTOP)
 
  
-![Churn dash](https://github.com/user-attachments/assets/4dcab37e-bfa8-4b8c-bfd0-5b6606d87c95)
+![Churn dash](https://github.com/user-attachments/assets/58bcf750-0eba-4944-88f0-ee03fa85f58f)
 
- ![map dash](https://github.com/user-attachments/assets/5af3c824-4899-4302-a89b-24f8bc76b365)
+![map dash](https://github.com/user-attachments/assets/290dd021-c647-40c0-aae7-b78911c8003f)
 
- ![customer risk dash](https://github.com/user-attachments/assets/c7b7a2f9-b35a-4122-bc56-42b90f02cfeb)
+![customer risk dash](https://github.com/user-attachments/assets/2646e5fb-9ff1-4064-8bc8-b85b236d2015)
 
- ![insight dash](https://github.com/user-attachments/assets/705a3083-32ba-4b2e-82d5-e98d1aea74cc)
+![insight dash](https://github.com/user-attachments/assets/e9cadaad-1f8c-4506-bc62-bef702170928)
+
 
 
