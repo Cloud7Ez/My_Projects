@@ -111,7 +111,7 @@ Since, a revenue loss of $3.68 million is anticipated due to a customer churn ra
  
 ![Churn dash](https://github.com/user-attachments/assets/58bcf750-0eba-4944-88f0-ee03fa85f58f)
 
-![map dash](https://github.com/user-attachments/assets/290dd021-c647-40c0-aae7-b78911c8003f)
+![map](https://github.com/user-attachments/assets/1faf2bed-22f8-42ad-a2a1-98036f4c2107)
 
 ![customer risk dash](https://github.com/user-attachments/assets/2646e5fb-9ff1-4064-8bc8-b85b236d2015)
 
