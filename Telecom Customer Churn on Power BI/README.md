@@ -2,7 +2,7 @@
 # Telecom Customer Churn 
 
 ### Dashboard: 
-           <iframe title="Telecom Customer Churn" width="600" height="373.5" src="https://app.fabric.microsoft.com/view?                               r=eyJrIjoiZjk2M2ZmMTctMWY4ZS00ZjQ0LWE4YzktYzRkNjUyN2Q0ZWNlIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9" frameborder="0" allowFullScreen="true">                </iframe>
+           <iframe title="Telecom Customer Churn" width="600" height="373.5" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZjk2M2ZmMTctMWY4ZS00ZjQ0LWE4YzktYzRkNjUyN2Q0ZWNlIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=96ef0393d5926c07e19e" frameborder="0" allowFullScreen="true"></iframe>
 
 ### Dataset:https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics/data
 
