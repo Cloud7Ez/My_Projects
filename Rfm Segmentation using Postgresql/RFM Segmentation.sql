@@ -131,14 +131,14 @@ select dealsize,to_char(round(sum(sales), 0), '$999,999,999') total_sales
 			order by 2 desc;
 			
 -- What was the best month for sales in a specific year? How much was earned that month?
-select month_id,TO_CHAR(SUM(sales), '$999,999,999') total_sales,count(ordernumber) frequency
+select month_id,to_char(sum(sales), '$999,999,999') total_sales,count(ordernumber) frequency
 	from sales
 		where year_id=2004 -- Need to change this value to filter by different years  
 			group by 1    
       			order by 2 desc;
 				  
 --November seems to be the month,what product did they sell in November?
-select month_id,productline,TO_CHAR(SUM(sales), '$999,999,999') total_sales,count(ordernumber) frequency
+select month_id,productline,to_char(sum(sales), '$999,999,999') total_sales,count(ordernumber) frequency
 	from sales 
 		where year_id = 2004 and month_id=11 -- Need to change this value to filter by different years and month
 			group by 1,2
@@ -147,14 +147,14 @@ select month_id,productline,TO_CHAR(SUM(sales), '$999,999,999') total_sales,coun
 --Top 10 Customers by Sales
 select 
     customername, 
-     TO_CHAR(SUM(sales), '$999,999,999')  total_sales 
+     to_char(sum(sales), '$999,999,999')  total_sales 
 		from sales
 			group by 1
 				order by 2 desc
 					limit 10;
 
 --Top 10 Products by Sales
-select productcode,productline,TO_CHAR(SUM(sales), '$999,999,999') total_sales 
+select productcode,productline,to_char(sum(sales), '$999,999,999') total_sales 
 		from sales
 			group by 1,2
 				order by 3 desc
