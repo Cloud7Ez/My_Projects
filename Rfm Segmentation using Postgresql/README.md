@@ -121,7 +121,7 @@ select month_id,TO_CHAR(SUM(sales), '$999,999,999') total_sales, count(ordernumb
 	from sales
 		where year_id=2004 -- Need to change this value to filter by different years  
 			group by 1    
-      			order by 2 desc;
+      				order by 2 desc;
 ```
 **Output:**
 
@@ -214,7 +214,7 @@ select
         -- calculate recency in days
         (select max(to_date(orderdate, 'DD/MM/YY')) from sales) - max(to_date(orderdate, 'DD/MM/YY')) recency
              from sales
-			 	group by customername;
+		group by customername;
 ```
 **Output:**
 
@@ -236,7 +236,7 @@ with rfm_cal as (
         -- calculate recency in days
         (select max(to_date(orderdate, 'DD/MM/YY')) from sales) - max(to_date(orderdate, 'DD/MM/YY')) recency
              from sales
-			 	group by customername),
+		group by customername),
 				 
 rfm_scores as (
     select c.*,
