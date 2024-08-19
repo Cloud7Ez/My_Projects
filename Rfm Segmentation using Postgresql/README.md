@@ -41,6 +41,7 @@ select
 		from sales;
  ```
  **Output:**  
+ 
  ![summarize sales data](https://github.com/user-attachments/assets/63ac2ae3-9224-4bb7-a21b-b1abd1b517ba)
 ------------------------------------------------------
  
@@ -52,6 +53,7 @@ select productline,to_char(round(sum(sales), 0), '$999,999,999') total_sales ,co
 			order by 3 desc;
  ```
  **Output:**
+ 
  ![productline](https://github.com/user-attachments/assets/d5600f47-b72a-4fbf-bb76-0248421cd216)
 ------------------------------------------------------
 
@@ -63,6 +65,7 @@ select year_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999
 			order by 2 desc;
  ```
  **Output:**
+ 
  ![sales by year](https://github.com/user-attachments/assets/0b9daddc-08a1-4c10-bde3-845eb00b8f84)
 ------------------------------------------------------
 
@@ -74,6 +77,7 @@ select month_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,99
 				order by 1;
  ```
  **Output:**
+ 
  ![sales by month](https://github.com/user-attachments/assets/d45a4eba-3786-4ebf-a8ad-dac56e29e5e5)
 ------------------------------------------------------
 
@@ -85,6 +89,7 @@ select qtr_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999,
 				order by 1;
  ```
  **Output:**
+ 
  ![sales by quater](https://github.com/user-attachments/assets/77858b3c-d5a3-449b-8e01-d8d273f82987)
 ------------------------------------------------------
 
@@ -94,6 +99,7 @@ select round(avg(quantityordered),0) average_order_size
 		from sales;
  ```
  **Output:**
+ 
  ![Average Order Size (Quantity Ordered)](https://github.com/user-attachments/assets/18445f33-f312-4f1b-8c67-c2b31170401c)
 ------------------------------------------------------
 
@@ -105,6 +111,7 @@ select status,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999,
 			order by 2 desc;
 ```
 **Output:**
+
 ![sales by status](https://github.com/user-attachments/assets/351176a8-556f-4d7d-9986-6a344544c463)
 ------------------------------------------------------
 
@@ -117,6 +124,7 @@ select month_id,TO_CHAR(SUM(sales), '$999,999,999') total_sales, count(ordernumb
       			order by 2 desc;
 ```
 **Output:**
+
 ![best month for sales](https://github.com/user-attachments/assets/a439ffbd-2245-475e-bdba-3d93f0a327ff)
 ------------------------------------------------------
 
@@ -129,6 +137,7 @@ select month_id,productline,TO_CHAR(SUM(sales), '$999,999,999') total_sales,coun
 				order by 3 desc; 
 ```
 **Output:**
+
 ![2](https://github.com/user-attachments/assets/83eae10d-7251-435d-b467-79462a6ca9f9)
 ------------------------------------------------------
 
@@ -143,6 +152,7 @@ select
 					limit 10;
 ```
 **Output:**
+
 ![Top 10 customer](https://github.com/user-attachments/assets/60119141-c744-4d03-ab3b-3141714c0be6)
 ------------------------------------------------------
 
@@ -155,6 +165,7 @@ select productcode,productline,TO_CHAR(SUM(sales), '$999,999,999') total_sales
 					limit 10;
 ```
 **Output:**
+
 ![top 10 product](https://github.com/user-attachments/assets/70faede5-71f6-4120-be7f-6099e7d8c004)
 ------------------------------------------------------
 
@@ -166,6 +177,7 @@ select max(to_date(orderdate,'DD/MM/YY'))  latest_date
 	from sales;
 ```
 **Output:**
+
 ![latest date](https://github.com/user-attachments/assets/1cad173d-12af-4f1e-a913-9b85b9254fe8)
 ------------------------------------------------------
 
@@ -175,6 +187,7 @@ select min(to_date(orderdate,'DD/MM/YY'))  earliest_date
 	from sales;
 ```
 **Output:**
+
 ![earliest date](https://github.com/user-attachments/assets/3dc7f24c-a5ca-47a3-aab3-d0e0bd7d4fa2)
 ------------------------------------------------------
 
@@ -184,6 +197,7 @@ select (max(to_date(orderdate,'DD/MM/YY')) - min(to_date(orderdate,'DD/MM/YY')))
 	from sales;
 ```
 **Output:**
+
 ![range of tranaction in days](https://github.com/user-attachments/assets/c0b47207-02ee-4811-a7e8-40317298a4ba)
 ------------------------------------------------------
 
@@ -203,6 +217,7 @@ select
 			 	group by customername;
 ```
 **Output:**
+
 ![rfm](https://github.com/user-attachments/assets/7a0b90dd-9029-4111-b9ca-8a9ccec82bf8)
 ------------------------------------------------------
 
@@ -241,6 +256,7 @@ select rfm_recency_score,rfm_frequency_score,rfm_monetary_score,total_rfm_score,
 	from rfm_segment;
 ```
 **Output:**
+
 ![rfm view](https://github.com/user-attachments/assets/93844bf9-988d-4d90-9322-c6557b47bb2c)
 ------------------------------------------------------
 
@@ -252,6 +268,7 @@ select distinct rfm_category_combination
   order by 1;
 ```
 **Output:**
+
 ![rfm_category_combination](https://github.com/user-attachments/assets/a403ded7-00ac-4fbc-97d9-aa4479f0d758)
 ------------------------------------------------------
 
@@ -271,6 +288,7 @@ select customername,
 			from rfm_segment;
 ```
 **Output:**
+
 ![segment](https://github.com/user-attachments/assets/0ca1a149-7d24-45b7-88ad-39dcd99bcd21)
 ------------------------------------------------------
 
