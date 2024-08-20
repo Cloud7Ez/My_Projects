@@ -71,7 +71,7 @@ select year_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999
 
 ```sql
 --Calculating # of  orders and  total_sales by month_id
-select month_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999,999') revenue
+select month_id,count(*) number_of_orders,to_char(round(sum(sales), 0), '$999,999,999') total_sales
 		from sales
 			group by 1
 				order by 1;
