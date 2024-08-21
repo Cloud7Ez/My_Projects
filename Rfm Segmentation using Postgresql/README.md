@@ -16,7 +16,10 @@
 - Top 10 Customers by Sales
 - Top 10 Products by  Sales
 - Some basic EDA
-- Segmenting customers based on their **recent paid order**, **order frequency** and **how much s/he pays** 
+- Segmenting customers based on their **recent paid order**, **order frequency** and **how much s/he pays**
+  
+## Tech Stack Used 
+![postgresql](https://github.com/user-attachments/assets/a6302d80-7d83-4a54-9880-2ff95b70399c)
 
   ------------------------------------------------------
 
