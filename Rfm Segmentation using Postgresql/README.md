@@ -19,7 +19,7 @@
 - Segmenting customers based on their **recent paid order**, **order frequency** and **how much s/he pays**
   
 ## Tech Stack Used 
-![postgresql](https://github.com/user-attachments/assets/a6302d80-7d83-4a54-9880-2ff95b70399c)
+![postgresql](https://github.com/user-attachments/assets/fed94e90-1379-4d0d-82aa-988131f8f7e7)
 
   ------------------------------------------------------
 
