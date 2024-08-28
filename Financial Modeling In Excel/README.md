@@ -235,6 +235,7 @@ The first step is to identify the total amount invested, which will be our capit
 ```
 
 https://github.com/user-attachments/assets/aade0383-3c3a-45f6-a2b3-abfaf5df1f64
+
 ------------------------------------------------------
 
 The second step is to calculate the total return earned in each period, which does not include the capital expenditures since these are a part of our investment amount.
@@ -244,6 +245,7 @@ SUM(D53:N53)
 
 ```
 https://github.com/user-attachments/assets/1ed64989-7b4c-40c2-a77f-0b2261b0e74f
+
 ------------------------------------------------------
 
 Finally, I calculated the return on investment (ROI) in J4 using the formula ROI = Total Return / Total Investment.
