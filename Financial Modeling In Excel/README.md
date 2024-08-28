@@ -90,7 +90,7 @@ Streit plans to remodel all units in the first year and start renting them in Ye
 
 1|2| 
 :-------------------------:|:-------------------------:
-![1](https://github.com/user-attachments/assets/d86b5fa8-5d3b-479a-932a-6fdbd5404dfb)|![2](https://github.com/user-attachments/assets/c6ceafd9-1f50-4b8b-82b0-f3a1c1398b51)
+![1](https://github.com/user-attachments/assets/d86b5fa8-5d3b-479a-932a-6fdbd5404dfb) | ![2](https://github.com/user-attachments/assets/c6ceafd9-1f50-4b8b-82b0-f3a1c1398b51)
 
 ------------------------------------------------------
 
