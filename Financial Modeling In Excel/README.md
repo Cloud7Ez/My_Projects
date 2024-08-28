@@ -20,7 +20,7 @@ Financial models can be complex, so it's important to keep them organized in Exc
 ## Skills showcased in this Project
 - Making a Financial Model
 - Excel Functions- If,Sum, Hlookup,NPV,XNPV,IRR,XIRR
-
+ 
 ## Below are snapshots of the Excel file sheets..
 ![1](https://github.com/user-attachments/assets/b3b1febd-2b8e-42b6-bd81-deac9f9b01cf)
 
@@ -28,7 +28,9 @@ Financial models can be complex, so it's important to keep them organized in Exc
 
 ![3](https://github.com/user-attachments/assets/c079769b-5f3f-4500-916d-f37e0f4e0481)
 
-## The steps followed to create the model are outlined below:
+
+## Additional information for performing the analysis is provided below.
+# The steps followed to create the model are outlined below:
 
 ### Step 1
 My initial task is to finalize an acquisitions model to evaluate the purchase of West Ridge North, a dilapidated apartment complex that Streit wants to buy, renovate, and make habitable. The seller, Shady Tree Management, has supplied an income statement for the previous year, and it's my responsibility to calculate the subtotals and net income.I used the SUM function to calculate the totals.
@@ -64,7 +66,7 @@ In our financial model, Year 0 is designated for acquisition costs because, at t
 ![1](https://github.com/user-attachments/assets/7176979f-50e8-4113-8d74-ee535f962847)|![2](https://github.com/user-attachments/assets/50708730-0395-4d59-a919-a4fc9ed17b2c)
 
 ### Step 3
-Financial models are commonly used to assess an investment over time, incorporating assumptions to estimate future revenue and expenses. Growth rates help project these figures into the future. To calculate the future value with a growth rate, use the formula:Future Value=Previous Value*(1+Rate).
+Financial models are commonly used to assess an investment over time, incorporating assumptions to estimate future revenue and expenses. Growth rates help project these figures into the future. To calculate the future value with a growth rate, I used the formula:Future Value=Previous Value*(1+Rate).
 
 ------------------------------------------------------
 
