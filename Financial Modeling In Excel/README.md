@@ -146,6 +146,7 @@ IF(HoldingPeriod=E16,SalePrice,0)
 - I then dragged this formula across columns E to N to extend it through Year 10.
 
 https://github.com/user-attachments/assets/ca1adc5a-3cb9-45c9-b1fa-336962c15125
+
 https://github.com/user-attachments/assets/8674849a-dbb0-4b1d-ba6c-cab18b1dfa49
 
 ## Step 5 (Scenario Manager)
