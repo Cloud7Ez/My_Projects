@@ -23,7 +23,9 @@ Financial models can be complex, so it's important to keep them organized in Exc
 
 ## Below are snapshots of the Excel file sheets..
 ![1](https://github.com/user-attachments/assets/b3b1febd-2b8e-42b6-bd81-deac9f9b01cf)
+
 ![2](https://github.com/user-attachments/assets/3527381b-54ab-4390-9313-a2053f690f56)
+
 ![3](https://github.com/user-attachments/assets/c079769b-5f3f-4500-916d-f37e0f4e0481)
 
 ## The steps followed to create the model are outlined below:
