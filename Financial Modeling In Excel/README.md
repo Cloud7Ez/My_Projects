@@ -174,6 +174,7 @@ Manually changing inputs is a fine way to use a financial model, but what if we 
 Streit asked me to determine what our starting rent would need to be in order to achieve $5M in net operating income by Year 10 under our Expected Rent scenario.
 - I used the Scenario Manager to display the Expected Rent scenario.
 - Then, I applied Goal Seek to determine what the Starting Rent in F19 would need to be for the Net Operating Income in N46 to reach $5,000,000.
+  
 https://github.com/user-attachments/assets/e143ef8e-8489-48ea-b57e-095ea68f9e91
 
  ------------------------------------------------------
@@ -182,6 +183,7 @@ Interesting,starting rent would need to be $3,655 to achieve a net operating inc
 
 - I used the Scenario Manager to display the Expected Rent scenario.
 - Then, I applied Goal Seek to find out what Rent Growth % in B10 would need to be for the Net Operating Income in N46 to reach $5,000,000.
+  
 https://github.com/user-attachments/assets/332bfdce-c70d-4924-bd37-f04549ebd242
 
 ## Step 7 (Sensitivity analysis)
@@ -199,6 +201,7 @@ Streit asked me to conduct a sensitivity analysis on how the Rent Growth % affec
 - I used the Rent Growth % in B10 as the column input variable.
 - I left the row input variable empty.
 - I formatted the results as numbers with 0 decimal places.
+  
 https://github.com/user-attachments/assets/2f3133d9-7a0d-402f-8b2e-4cb48d0a64b1
 
 ------------------------------------------------------
@@ -212,6 +215,7 @@ The real strength of Data Tables emerges when analyzing multiple variables. Whil
 - I used Starting Rent in F19 as the row input and Rent Growth % in B10 as the column input.
 - I formatted the results as standard currency with 0 decimal places.
 - Finally, I applied a color scale using the conditional formatting options.
+  
 https://github.com/user-attachments/assets/5ee388b5-2322-4258-bb62-caa9d5111c6f
 
 ## Step 8 (Return on investment)
