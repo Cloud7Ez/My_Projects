@@ -29,10 +29,11 @@ Financial models can be complex, so it's important to keep them organized in Exc
 ![3](https://github.com/user-attachments/assets/c079769b-5f3f-4500-916d-f37e0f4e0481)
 
 
-## Additional information for performing the analysis is provided below.
-# The steps followed to create the model are outlined below:
+# Additional information for performing the analysis is provided below.
+## The steps followed to create the model are outlined below:
 
-### Step 1
+### Step 1(Last Year Financials)
+
 My initial task is to finalize an acquisitions model to evaluate the purchase of West Ridge North, a dilapidated apartment complex that Streit wants to buy, renovate, and make habitable. The seller, Shady Tree Management, has supplied an income statement for the previous year, and it's my responsibility to calculate the subtotals and net income.I used the SUM function to calculate the totals.
 ```
    SUM(___,___,___)
@@ -47,7 +48,7 @@ My initial task is to finalize an acquisitions model to evaluate the purchase of
 :-------------------------:|:-------------------------:
 ![1](https://github.com/user-attachments/assets/9ea13164-eb22-4650-a141-60fe392eb4b9)|![2](https://github.com/user-attachments/assets/288a2e6a-7411-4db0-980c-8b187fbb0eaa)
 
-### Step 2
+### Step 2 
 Real estate investors use the capitalization rate (cap rate) to determine their investment yield. The cap rate formula is:Cap rate=Net operating income/Property value.To find the property value, rearrange the formula:Property Value=Net Operating Income/Cap Rate.Streit has notified me that their target cap rate is 6.00%.Using this in the Acqusitions Details I have calculated the purchase price .
 
 1|2| 
@@ -56,7 +57,7 @@ Real estate investors use the capitalization rate (cap rate) to determine their 
 
 ------------------------------------------------------
 
-In our financial model, Year 0 is designated for acquisition costs because, at this point, no other income or expenses have yet been accrued. This represents the precise moment the property is purchased.I entered the purchase price in the property purchase column and, since it was an expense, I recorded it as a negative amount.I also applied a custom format to add "Year" text before the 0.
+In the financial model, Year 0 is designated for acquisition costs because, at this point, no other income or expenses have yet been accrued. This represents the precise moment the property is purchased.I entered the purchase price in the property purchase column and, since it was an expense, I recorded it as a negative amount.I also applied a custom format to add "Year" text before the 0.
 ```
    "Year" 0
 ```
@@ -65,7 +66,7 @@ In our financial model, Year 0 is designated for acquisition costs because, at t
 :-------------------------:|:-------------------------:
 ![1](https://github.com/user-attachments/assets/7176979f-50e8-4113-8d74-ee535f962847)|![2](https://github.com/user-attachments/assets/50708730-0395-4d59-a919-a4fc9ed17b2c)
 
-### Step 3
+### Step 3 
 Financial models are commonly used to assess an investment over time, incorporating assumptions to estimate future revenue and expenses. Growth rates help project these figures into the future. To calculate the future value with a growth rate, I used the formula:Future Value=Previous Value*(1+Rate).
 
 ------------------------------------------------------
@@ -96,7 +97,7 @@ Streit plans to remodel all units in the first year and start renting them in Ye
 
 ------------------------------------------------------
 
-Now that we know the monthly rent for each unit, we can calculate the net potential rent for each year. Net potential rent is simply the total amount of rent that could be potentially earned by the entire property.
+Now that I know the monthly rent for each unit, I can calculate the net potential rent for each year. Net potential rent is simply the total amount of rent that could be potentially earned by the entire property.
 To calculate the net potential rent for each year:
 
 - In cell F18, I determined the Net Potential Rent by multiplying the value in F19 (monthly rent per unit) by the "Units" named range.
@@ -108,8 +109,10 @@ To calculate the net potential rent for each year:
 ![2](https://github.com/user-attachments/assets/5aaf9eaf-592d-45f2-ac73-4d8ae219a38f)
 
 ### Step 4
-To enable Streit's Chief Investment Officer to analyze the predicted sales price of West Ridge North for any year, we can use the cap rate formula: Property Value = Net Operating Income/Cap Rate.
+To enable Streit's Chief Investment Officer to analyze the predicted sales price of West Ridge North for any year, I used the cap rate formula: Property Value = Net Operating Income/Cap Rate.
+
 ------------------------------------------------------
+
 Streit told me to put these value in the Sales Details at the top of the worksheet:
 - Holding Period (Years): 5.
 - Exit Cap Rate: 6.00%.
@@ -121,7 +124,10 @@ Streit told me to put these value in the Sales Details at the top of the workshe
 ------------------------------------------------------
 
 To make the sales price calculation dynamic, I used the HLOOKUP() function to locate the net operating income for the year that matches the Holding Period (Years) assumption. Under the Sale Details in cell F8, I used HLOOKUP() as follows:
+```
+HLOOKUP(F6,D16:N46,31,FALSE)/F7
 
+```
 - The Holding Period (Years) is the lookup value.
 - The table array is D16 through N46.
 - The row index number corresponds to the last row in the table array.
@@ -153,7 +159,9 @@ https://github.com/user-attachments/assets/8674849a-dbb0-4b1d-ba6c-cab18b1dfa49
 
 ## Step 5 (Scenario Manager)
 The Scenario Manager in Excel is a tool that organizes different scenarios and their input changes, making it easier to compare them.
+
 ------------------------------------------------------
+
 The first scenario I created will keep our model unchanged, allowing us to easily return to these values.
 - I added a new scenario in the Scenario Manager called "Expected Rent."
 - I set the Rent Growth % in B10 to 0.05 and the Starting Rent in F19 to 2300.
@@ -169,11 +177,11 @@ Now that the scenarios were set up, I used the manager to compare net operating 
 https://github.com/user-attachments/assets/0332a431-dbc9-48d9-b894-bd4cb7b30802
 
 ## Step 6 (Goal Seek)
-Manually changing inputs is a fine way to use a financial model, but what if we had a target or goal and wanted to know how much an input would need to change in order to meet it? The Goal Seek tool is especially useful in this case.
+Manually changing inputs is a fine way to use a financial model, but what if I had a target or goal and wanted to know how much an input would need to change in order to meet it? The Goal Seek tool is especially useful in this case.
 
  ------------------------------------------------------
 
-Streit asked me to determine what our starting rent would need to be in order to achieve $5M in net operating income by Year 10 under our Expected Rent scenario.
+Streit asked me to determine what our starting rent would need to be in order to achieve $5M in net operating income by Year 10 under the Expected Rent scenario.
 - I used the Scenario Manager to display the Expected Rent scenario.
 - Then, I applied Goal Seek to determine what the Starting Rent in F19 would need to be for the Net Operating Income in N46 to reach $5,000,000.
   
@@ -181,7 +189,7 @@ https://github.com/user-attachments/assets/e143ef8e-8489-48ea-b57e-095ea68f9e91
 
  ------------------------------------------------------
 
-Interesting,starting rent would need to be $3,655 to achieve a net operating income of $5M with the current Rent Growth %. But what if we adjusted the Rent Growth % instead of the Starting Rent to see the impact?
+Interesting,starting rent would need to be $3,655 to achieve a net operating income of $5M with the current Rent Growth %. But what if I adjusted the Rent Growth % instead of the Starting Rent to see the impact?
 
 - I used the Scenario Manager to display the Expected Rent scenario.
 - Then, I applied Goal Seek to find out what Rent Growth % in B10 would need to be for the Net Operating Income in N46 to reach $5,000,000.
@@ -189,7 +197,7 @@ Interesting,starting rent would need to be $3,655 to achieve a net operating inc
 https://github.com/user-attachments/assets/332bfdce-c70d-4924-bd37-f04549ebd242
 
 ## Step 7 (Sensitivity analysis)
-We've explored some interesting what-if analyses by changing inputs one at a time, but there must be a more efficient way. Data Tables are excellent for sensitivity analysis, allowing us to examine how a range of input changes affects the output.
+I've explored some interesting what-if analyses by changing inputs one at a time, but there must be a more efficient way. Data Tables are excellent for sensitivity analysis, allowing me to examine how a range of input changes affects the output.
 
 ------------------------------------------------------
 
@@ -208,7 +216,7 @@ https://github.com/user-attachments/assets/2f3133d9-7a0d-402f-8b2e-4cb48d0a64b1
 
 ------------------------------------------------------
 
-The real strength of Data Tables emerges when analyzing multiple variables. While we've seen how to perform sensitivity analysis with a single input, it's also valuable to explore how two inputs interact and affect the dependent variable. Streit asked me to examine how changes in our Rent Growth % and Starting Rent assumptions influence net operating income.
+The real strength of Data Tables emerges when analyzing multiple variables. While I've seen how to perform sensitivity analysis with a single input, it's also valuable to explore how two inputs interact and affect the dependent variable. Streit asked me to examine how changes in our Rent Growth % and Starting Rent assumptions influence net operating income.
 
 - I deleted cells B57 from the data table, leaving only the list of percentages from 0.00% to 10.00%.
 - In cells B57,I created a row of numbers ranging from 2,000 to 3,000 in increments of 250.
@@ -240,7 +248,7 @@ https://github.com/user-attachments/assets/aade0383-3c3a-45f6-a2b3-abfaf5df1f64
 
 ------------------------------------------------------
 
-The second step is to calculate the total return earned in each period, which does not include the capital expenditures since these are a part of our investment amount.
+The second step is to calculate the total return earned in each period, which does not include the capital expenditures since these are a part of the investment amount.
 - In J3, I calculated the Total Return by summing the net income from row 53 for all years and then adding the Total Investment in J2 to account for the capital expenditures included in the net income.
 ```
 SUM(D53:N53)
@@ -261,7 +269,7 @@ Benchmarks are a point of reference that can be used as a comparison.
 
 ------------------------------------------------------
 
-Streit's Chief Investment Officer asked us to determine if a benchmark rate of 20.00% could be applied. I used the FV() function to calculate the future value of the investment amount based on this benchmark rate and the investment horizon.
+Streit's Chief Investment Officer asked me to determine if a benchmark rate of 20.00% could be applied. I used the FV() function to calculate the future value of the investment amount based on this benchmark rate and the investment horizon.
 
 ```
 FV(C2,C3,,-C4,)
@@ -297,7 +305,7 @@ https://github.com/user-attachments/assets/7a1ad74f-9484-4775-92ff-73ec0f7e4ee9
 
 
 ## Step 11(Net Present Value)
-The Chief Investment Officer asked us to find the net present value (NPV) of the total net income earned over the lifetime of West Ridge North. I used the NPV() function to do this:
+The Chief Investment Officer asked me to find the net present value (NPV) of the total net income earned over the lifetime of West Ridge North. I used the NPV() function to do this:
 ```
 NPV(J5,E53:N53)+D53
 
@@ -310,7 +318,7 @@ https://github.com/user-attachments/assets/c288ed63-b2c8-41f2-bc32-916e0eac3428
 
 ------------------------------------------------------
 
-We encountered a limitation with NPV() because it treated Year 0 as Year 1, not accounting for the exact timing of cash flows. We switched to using XNPV(), which is better for handling time series data and provides more precise calculations, as it doesn't require periods to be the same.
+I encountered a limitation with NPV() because it treated Year 0 as Year 1, not accounting for the exact timing of cash flows. I switched to using XNPV(), which is better for handling time series data and provides more precise calculations, as it doesn't require periods to be the same.
 
 ```
 XNPV(J5,D53:N53,D15:N15)
