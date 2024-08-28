@@ -100,9 +100,10 @@ To calculate the net potential rent for each year:
 - In cell F18, I determined the Net Potential Rent by multiplying the value in F19 (monthly rent per unit) by the "Units" named range.
 - Since the rent amount is monthly, I converted it to an annual figure by multiplying by 12.
 - I then dragged this formula across to cell N18 to extend the analysis through Year 10.
-1|2| 
-:-------------------------:|:-------------------------:
-![1](https://github.com/user-attachments/assets/16c60847-b8eb-4b66-a491-85a92db9caa2) | ![2](https://github.com/user-attachments/assets/5aaf9eaf-592d-45f2-ac73-4d8ae219a38f)
+
+![1](https://github.com/user-attachments/assets/16c60847-b8eb-4b66-a491-85a92db9caa2) 
+
+![2](https://github.com/user-attachments/assets/5aaf9eaf-592d-45f2-ac73-4d8ae219a38f)
 
 ### Step 4
 To enable Streit's Chief Investment Officer to analyze the predicted sales price of West Ridge North for any year, we can use the cap rate formula: Property Value = Net Operating Income/Cap Rate.
