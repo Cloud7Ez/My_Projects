@@ -19,7 +19,7 @@ Financial models can be complex, so it's important to keep them organized in Exc
 
 ## Skills showcased in this Project
 - Making a Financial Model
-- Excel Functions- Hlookup,NPV,XNPV,IRR,XIRR
+- Excel Functions- If,Sum, Hlookup,NPV,XNPV,IRR,XIRR
 
 ## Below are snapshots of the Excel file sheets..
 ![1](https://github.com/user-attachments/assets/b3b1febd-2b8e-42b6-bd81-deac9f9b01cf)
