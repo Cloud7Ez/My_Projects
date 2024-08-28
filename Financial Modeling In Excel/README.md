@@ -67,9 +67,10 @@ I copied the subtotal formulas from column B to the corresponding rows in column
 Added some inputs to the Operational Assumptions section in the top of the sheet:
 -	Added 2% for Cost Growth %.
 -	Added 5% for Rent Growth %.
+-	
 1|2| 
 :-------------------------:|:-------------------------:
-![1](https://github.com/user-attachments/assets/21f99c5b-251b-49ac-bcd7-5ca2facee61d)|![2](https://github.com/user-attachments/assets/8af8a80c-7fbe-4e27-bd01-587f103c6fd8)
+![1](https://github.com/user-attachments/assets/21f99c5b-251b-49ac-bcd7-5ca2facee61d) | ![2](https://github.com/user-attachments/assets/8af8a80c-7fbe-4e27-bd01-587f103c6fd8)
 
 ------------------------------------------------------
 
