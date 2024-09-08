@@ -9,7 +9,7 @@ The goal of this project was to create a sales dashboard for a coffee store, aim
 
 ## Skills showcased in this Project
 - Data Cleaning, Data Transformation, Data Analysis
-- Filtering, Sorting and Excel Functions- Vlookup, IF
+- Filtering, Sorting and Excel Functions- Vlookup, IFS,Xlookup
 - Pivot Tables and Pivot Chart
 - Data Visulisation and Dashboard creation
 
