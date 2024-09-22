@@ -61,6 +61,7 @@ select
     	from website_pageviews;
 ```
 **output:**
+
 ![1](https://github.com/user-attachments/assets/48238b03-f928-41c8-893d-ecfe62697086)
 
 ------------------------------------------------------ 
@@ -74,6 +75,7 @@ select pageview_url,count(distinct website_session_id) as total_pageview
 
 ```
 **output:**
+
 ![4](https://github.com/user-attachments/assets/68118ef9-33c8-4098-9746-c8b82e944851)
 
 ------------------------------------------------------ 
@@ -95,6 +97,7 @@ select
 						order by number_of_sessions desc;
 ```
 **output:**
+
 ![5](https://github.com/user-attachments/assets/ef91c2c3-c8da-4d32-aaae-93079ad1eeac)
 
 ------------------------------------------------------ 
@@ -115,6 +118,7 @@ select
 							group by 1, 2;
 ```
 **output:**
+
 ![2](https://github.com/user-attachments/assets/0345470a-76e2-4f36-bbc3-02a7b58c190e)
 
 [Results/Insights]: It's evident that session volume has been steadily increasing. In the first month, there were just 1,860 sessions, but that number has now grown to 8,889.
@@ -144,6 +148,7 @@ select
 ```
 
 **output:**
+
 ![3](https://github.com/user-attachments/assets/1b37e083-9a19-4c9d-b73a-9ddf44f16daa)
 
 [Results/Insights]: Brand campaigns involve users actively searching for our business on search engines and clicking on our ads—companies often bid on their own brand terms to keep competitors at bay. The board is curious if the company will always depend on paid traffic or if the brand is growing organically. This is one indicator of whether the brand is gaining traction. The substantial increase in brand sessions is a very positive sign that investors will appreciate.
@@ -171,6 +176,7 @@ select
 ```
 
 **output:**
+
 ![6](https://github.com/user-attachments/assets/9f1c4017-196c-4430-8c3a-6ab1b5de9ad1)
 
 [Results/Insights]: We observe significantly more desktop sessions compared to mobile. Initially, the desktop-to-mobile ratio was just under 2:1, but by the end of the period, it’s grown to over 3:1. The difference in orders is even more pronounced, starting with a 5:1 ratio and nearly doubling to a 10:1 ratio by the end.
@@ -204,6 +210,7 @@ select
 ```
 
 **output:**
+
 ![7](https://github.com/user-attachments/assets/6eda360d-3692-40c1-b64b-62a27e47f38f)
 - We have UTM source values of Gsearch (Google) and Bsearch (Bing), with UTM campaign values for both brand and nonbrand categories. These represent our paid channels, but we also want to analyze other channels like direct type-in traffic and organic search.
 
@@ -233,6 +240,7 @@ select
 							order by 1,2;
 ```
 **output:**
+
 ![9](https://github.com/user-attachments/assets/0f7d1d9e-324a-4712-9d4a-39915b4f7a96)
 
 [Results/Insights]: The conversion rate began around 2.6%, increased to 3.5%, and continued to steadily climb into the 4% range.
@@ -320,6 +328,7 @@ select count(website_session_id) as sessions_since_test
 			    and utm_campaign = 'nonbrand';
 ```
 **output:**
+
 ![10](https://github.com/user-attachments/assets/ecade108-ef14-43f3-98de-030bd574c467)
 
 ![11](https://github.com/user-attachments/assets/f1f10b7c-1c38-4026-8dbd-93209e045b19)
@@ -504,6 +513,7 @@ select
 					order by 1, 2;
 ```
 **output:**
+
 ![24](https://github.com/user-attachments/assets/2c4d3f00-ed42-4503-a2c0-790d643bff14)
 
 Now, as we wrap up three years of business, the growth has been remarkable. Initially, we had just 60 orders, and now we’re seeing around 100 times that number. Session volume has experienced similar significant growth, making the progress quite impressive.
@@ -527,6 +537,7 @@ select
 ```
 
 **output:**
+
 ![25](https://github.com/user-attachments/assets/cc0c2cf8-a2ae-4d00-94ee-782e498b9cf3)
 
 We’ve seen a similar growth story in session-to-order conversion rates, which have risen from around 3% to over 8% in the latest quarter. Revenue per order, which started at a flat $49.99 when the company sold only one product, has now surpassed $60 due to cross-selling and optimization efforts. Revenue per session, initially around $1.60, has climbed to over $5 in the most recent quarter.
@@ -553,6 +564,7 @@ select
 					order by 1, 2;
 ```
 **output:**
+
 ![27](https://github.com/user-attachments/assets/98b67b25-dc76-4873-a934-33e4d02932c5)
 
 One key factor that will excite potential investors is the significant growth in brand search, organic search, and direct type-in traffic. In Q2 of 2012, the ratio of Google Search nonbrand to brand+free traffic was nearly 6:1. By Q1 of 2015, this ratio had dropped to about 2:1. The business has become much less reliant on paid nonbrand campaigns, showing strong progress in building its own brand, organic, and direct type-in traffic—channels with better margins that reduce dependency on search engines.
@@ -582,6 +594,7 @@ select
 							order by 1, 2;
 ```
 **output:**
+
 ![28](https://github.com/user-attachments/assets/c90c79a6-db21-452e-9405-e7b341a40970)
 
 The Google Search non-brand campaign's conversion rate (CVR) has jumped from 3.2% to over 8% in the most recent quarter, more than doubling in performance. Similarly, with Bing Search, although we didn't initially run a non-brand campaign, we've since introduced it and seen growth.
