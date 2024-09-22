@@ -7,6 +7,7 @@ In this SQL project, I took on the role of an eCommerce Database Analyst for Mav
 
 ## Tech Stack Used 
 **Postgresql**
+
 ![sql-server](https://github.com/user-attachments/assets/2a390e3d-c8d2-4642-a8ed-19deec734af8) 
 
 ------------------------------------------------------
