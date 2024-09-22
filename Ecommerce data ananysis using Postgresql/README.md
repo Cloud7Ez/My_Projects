@@ -51,7 +51,6 @@ In today's database:
 
 ## Analyses Requests From the CEO
 
------------------------------------------------------- 
 **Q**: Can you show me the average number of pageview per session?
 ```
 -- average number of pageview per session
