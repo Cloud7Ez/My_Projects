@@ -20,104 +20,6 @@ Powerbi
 
 The raw dataset, provided in .csv format, was imported directly into Power BI, comprising eight separate tables. After an initial review, I identified that the focus would be on Sales and Returns data. I cleaned the data by ensuring columns were appropriately named, data types were accurate, and confirmed there were no missing values. I then started exploring potential relationships between the tables.
 
-### Calculated Columns and Parameters that were used are given below
-
-**Customer Parameters:**
-- Added Customer Metrics Using New Field Parameters .
-```
-Customer_Metrics = {
-    ("Total Custome", NAMEOF('_Measures'[Total Customer]), 0),
-    ("Avg. Revenue Per Customer", NAMEOF('_Measures'[Avg. Revenue Per Customer]), 1)
-}
-```
-**Product Parameters:**
-- Added Product Metrics Using New Field Parameters .
-```
-Product_Metrics = {
-    ("Orders", NAMEOF('_Measures'[Total Orders]), 0),
-    ("Returns", NAMEOF('_Measures'[Total Returns]), 1),
-    ("Revenue", NAMEOF('_Measures'[Total Revenue]), 2),
-    ("Profit", NAMEOF('_Measures'[Profit]), 3),
-    ("Profit Margin (%)", NAMEOF('_Measures'[Profit Margin]), 4),
-    ("Return Rate (%)", NAMEOF('_Measures'[Return Rate]), 5)
-}
-```
-
-**Price Adjustment Parameters:**
-- Added Price adjustment(%) Using Numeric Range Parameters
-
-```
-Price Adjustment(%) = GENERATESERIES(-1, 1, 0.1)
-
-Price Adjustment(%) Value = SELECTEDVALUE('Price Adjustment(%)'[Price Adjustment(%)], 0)
-```
-------------------------------------------------------
-
-- Added Order type in Fact Sales Table.
-
-```
-Order Type = 
-IF(
-    'Fact Sales'[Order Quantity]>1,
-    "Bulk Order",
-    "Single Order"
-)
-
-```
-------------------------------------------------------
-
-**Product Lookup Table:**
-
-- Added Price Point .
-```
-Price Point = 
-SWITCH(
-    TRUE(),
-    'Product Lookup'[Product Price] > 500 ,"High",
-    'Product Lookup'[Product Price] > 100, "Mid-Range",
-    "Low"
-)
-```
-------------------------------------------------------
-
-**Customer Lookup Table:**
-
-- Added Is Parent.
-```
-Is Parent = 
-IF('Customer Lookup'[Total Children] > 0 , "Yes",
-"No")
-```
-- Added Customer Priority.
-```
-Customer Priority = 
-IF('Customer Lookup'[Annual Income] > 100000
-&&
-'Customer Lookup'[Is Parent] = "Yes",
-"Priority","Standard"
-)
-```
-- Added Education Category.
-```
-Education Category = 
-SWITCH(
-    'Customer Lookup'[Education Level],
-    "High School","High School",
-    "Partial High School","High School",
-    "Bachelors","Undergrad",
-    "Graduate Degree","Graduate"
-    )
-```
-- Added Income Lavel
-
-```
-Income Level = 
-IF('Customer Lookup'[Annual Income] >= 150000,"Very High",
- IF('Customer Lookup'[Annual Income] >= 100000,"High",
-   IF('Customer Lookup'[Annual Income] >= 50000, "Average",
-     "Low")))
-```     
-
 ## Data Modeling
 
 Once I confirmed the accuracy and consistency of the data, I proceeded to create a data model. I designated ‘Sales Data’ and ‘Returns Data’ as the key tables, then established relationships between them. For this project, I determined that only one-to-many relationships were needed. A visual representation of the final model is also provided for better clarity.
@@ -227,6 +129,103 @@ CALCULATE([Total Orders],
 
 
 ```
+## Calculated Columns and Parameters that were used are given below:
+
+**Customer Parameters:**
+- Added Customer Metrics Using New Field Parameters .
+```
+Customer_Metrics = {
+    ("Total Custome", NAMEOF('_Measures'[Total Customer]), 0),
+    ("Avg. Revenue Per Customer", NAMEOF('_Measures'[Avg. Revenue Per Customer]), 1)
+}
+```
+**Product Parameters:**
+- Added Product Metrics Using New Field Parameters .
+```
+Product_Metrics = {
+    ("Orders", NAMEOF('_Measures'[Total Orders]), 0),
+    ("Returns", NAMEOF('_Measures'[Total Returns]), 1),
+    ("Revenue", NAMEOF('_Measures'[Total Revenue]), 2),
+    ("Profit", NAMEOF('_Measures'[Profit]), 3),
+    ("Profit Margin (%)", NAMEOF('_Measures'[Profit Margin]), 4),
+    ("Return Rate (%)", NAMEOF('_Measures'[Return Rate]), 5)
+}
+```
+
+**Price Adjustment Parameters:**
+- Added Price adjustment(%) Using Numeric Range Parameters
+
+```
+Price Adjustment(%) = GENERATESERIES(-1, 1, 0.1)
+
+Price Adjustment(%) Value = SELECTEDVALUE('Price Adjustment(%)'[Price Adjustment(%)], 0)
+```
+------------------------------------------------------
+
+- Added Order type in Fact Sales Table.
+
+```
+Order Type = 
+IF(
+    'Fact Sales'[Order Quantity]>1,
+    "Bulk Order",
+    "Single Order"
+)
+
+```
+------------------------------------------------------
+
+**Product Lookup Table:**
+
+- Added Price Point .
+```
+Price Point = 
+SWITCH(
+    TRUE(),
+    'Product Lookup'[Product Price] > 500 ,"High",
+    'Product Lookup'[Product Price] > 100, "Mid-Range",
+    "Low"
+)
+```
+------------------------------------------------------
+
+**Customer Lookup Table:**
+
+- Added Is Parent.
+```
+Is Parent = 
+IF('Customer Lookup'[Total Children] > 0 , "Yes",
+"No")
+```
+- Added Customer Priority.
+```
+Customer Priority = 
+IF('Customer Lookup'[Annual Income] > 100000
+&&
+'Customer Lookup'[Is Parent] = "Yes",
+"Priority","Standard"
+)
+```
+- Added Education Category.
+```
+Education Category = 
+SWITCH(
+    'Customer Lookup'[Education Level],
+    "High School","High School",
+    "Partial High School","High School",
+    "Bachelors","Undergrad",
+    "Graduate Degree","Graduate"
+    )
+```
+- Added Income Lavel
+
+```
+Income Level = 
+IF('Customer Lookup'[Annual Income] >= 150000,"Very High",
+ IF('Customer Lookup'[Annual Income] >= 100000,"High",
+   IF('Customer Lookup'[Annual Income] >= 50000, "Average",
+     "Low")))
+```     
 
 ## Data Visualization
 
