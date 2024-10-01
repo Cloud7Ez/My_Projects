@@ -2,7 +2,7 @@
 # Telecom Customer Churn 
 
 ### Dashboard: 
-     https://app.fabric.microsoft.com/view?r=eyJrIjoiZjk2M2ZmMTctMWY4ZS00ZjQ0LWE4YzktYzRkNjUyN2Q0ZWNlIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=96ef0393d5926c07e19e
+[Interactive Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiZjk2M2ZmMTctMWY4ZS00ZjQ0LWE4YzktYzRkNjUyN2Q0ZWNlIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=96ef0393d5926c07e19e)
 
 ### Dataset:
            https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics/data
