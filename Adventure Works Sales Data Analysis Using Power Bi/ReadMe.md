@@ -5,10 +5,9 @@ I worked on a project with the Adventure Works dataset, focusing on analyzing sa
 
 ## Dashboard Link(Fabric)
 
-```
-https://app.fabric.microsoft.com/view?r=eyJrIjoiN2Q1NjU4MDItN2ZhNC00YmMwLWIyN2QtYzIxZTU1NDQzOGRmIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9
+[Interactive Dashboard](https://app.fabric.microsoft.com/viewr=eyJrIjoiN2Q1NjU4MDItN2ZhNC00YmMwLWIyN2QtYzIxZTU1NDQzOGRmIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9)
 
-```
+
 
 ## Tech Stack Used 
 
