@@ -5,7 +5,7 @@ In this project I worked with a HR dataset, focusing on analyzing employee data.
 
 ## Dashboard Link(Fabric)
 
-[Interactive Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiMTdhNjhmYjgtZTk1OC00ZjE3LTg3MjUtZGY1ODlhNmFhNDM0IiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=32bde92840b55248de7e)
+[Interactive Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiZjNjZGYyMDMtMmI2OC00ZmEyLWI4NTAtYzQ2YTIwNjlmN2NmIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=32bde92840b55248de7e)
 
 
 
