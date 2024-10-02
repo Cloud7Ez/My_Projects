@@ -150,7 +150,7 @@ return SWITCH(
             SELECTEDVALUE('Date Hierarchy'[Date Hierarchy Order]) = 3, formattedYearAttr,
             BLANK()
 )
-This is used Attrition Trend.
+This measure  is used in Attrition Trend.
 ---
 
 
