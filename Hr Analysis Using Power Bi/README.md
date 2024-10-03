@@ -18,7 +18,7 @@ Powerbi
 ## Data Cleaning
 
 The raw dataset, provided in .csv format, was imported directly into Power BI, comprising One  table.
-- As there was to date table so I created a date table by creating a blank query ,then I opened the advenced editor and pasted the script code created by Brian Grant.
+- As there was no date table so I created a date table by creating a blank query ,then I opened the advenced editor and pasted the script code created by Brian Grant.
 - Then created another table for survey scores by duplicating the hr_attrition table and removed other columns keeping "Employee Number", "Switch Attrition/Retention 2", "Environment Satisfaction", "Heat Map - Attrition Emp", "Heat Map - Current Emp", "Job Involvement", "Job Satisfaction", "Relationship Satisfaction", "Work Life Balance" columns. M code is given below.
 
 ```
