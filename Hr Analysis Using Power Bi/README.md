@@ -34,7 +34,7 @@ Table.UnpivotOtherColumns(#"Removed Other Columns", {"Heat Map - Current Emp", "
 
 ## Data Modeling
 
-Once I confirmed the accuracy and consistency of the data, I proceeded to create a data model. I designated 'Hr_Attrition" as the key tables, then established relationships between them. For this project, I determined that only one-to-many relationships were needed. A visual representation of the final model is also provided for better clarity.
+Once I confirmed the accuracy and consistency of the data, I proceeded to create a data model. I designated 'Hr_Attrition" as the key table, then established relationships between them. For this project, I determined that only one-to-many relationships were needed. A visual representation of the final model is also provided for better clarity.
 
 ![Data Model](https://github.com/user-attachments/assets/338bd622-073b-4a6f-be8b-44f1aa785103)
 
