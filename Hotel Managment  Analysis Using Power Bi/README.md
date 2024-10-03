@@ -93,7 +93,7 @@ Daily Sellable Room Nights = DIVIDE([Total Capacity], [No of days])
 Daily Utilized Room Nights = DIVIDE([Total Checked Out],[No of days])
 
 ---
-"Revenue WoW change % = 
+Revenue WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([Revenue],dim_date[wn]= selv)
 var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -101,11 +101,11 @@ var revpw =  CALCULATE([Revenue],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ---
-"Occupancy WoW change % = 
+Occupancy WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([Occupancy %],dim_date[wn]= selv)
 var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -113,11 +113,11 @@ var revpw =  CALCULATE([Occupancy %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ---
-"ADR WoW change % = 
+ADR WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([ADR],dim_date[wn]= selv)
 var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -125,12 +125,12 @@ var revpw =  CALCULATE([ADR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ---
 
-"Revpar WoW change % = 
+Revpar WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([RevPAR],dim_date[wn]= selv)
 var revpw =  CALCULATE([RevPAR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -138,11 +138,11 @@ var revpw =  CALCULATE([RevPAR],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ---
-"Realisation WoW change % = 
+Realisation WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([Realisation %],dim_date[wn]= selv)
 var revpw =  CALCULATE([Realisation %],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -150,11 +150,11 @@ var revpw =  CALCULATE([Realisation %],FILTER(ALL(dim_date),dim_date[wn]= selv-1
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ---
-"DSRN WoW change % = 
+DSRN WoW change % = 
 Var selv = IF(HASONEFILTER(dim_date[wn]),SELECTEDVALUE(dim_date[wn]),MAX(dim_date[wn]))
 var revcw = CALCULATE([DSRN],dim_date[wn]= selv)
 var revpw =  CALCULATE([DSRN],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
@@ -162,7 +162,7 @@ var revpw =  CALCULATE([DSRN],FILTER(ALL(dim_date),dim_date[wn]= selv-1))
 return
 
 
-DIVIDE(revcw,revpw,0)-1"
+DIVIDE(revcw,revpw,0)-1
 ---
 
 ```
