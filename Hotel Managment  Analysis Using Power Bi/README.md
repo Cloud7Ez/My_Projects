@@ -5,7 +5,7 @@ In this project, I worked on a hotel management dataset to gain insights into th
 
 ## Dashboard Link(Fabric)
 
-[Interactive Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiMTA4YzU2ODMtNTJiZC00MDAyLWI1YTAtZGQyYzQ3ZTA1ZWMzIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=9df8f20a45b580365ba7)
+[Interactive Dashboard](https://app.fabric.microsoft.com/view?r=eyJrIjoiZDMxMzk3NWYtYWMwNC00ZWE3LWEzOWEtN2ZiNWM4OTQxNjcyIiwidCI6ImYyYWY5N2MyLTFiODUtNDQwOC05YTc5LTBjNjI0N2M4YTQ0YiJ9&pageName=9df8f20a45b580365ba7)
 
 
 
