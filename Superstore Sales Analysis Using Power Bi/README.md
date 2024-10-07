@@ -15,7 +15,7 @@ Powerbi
 
 ## Data Cleaning
 
-- The raw dataset, provided in .xls format, was imported directly into Power BI, it has tree sheet I only imported orders sheet.
+- The raw dataset, provided in .xls format, was imported directly into Power BI, it has three sheets but for analysis I imported orders sheet.
  
 - I cleaned the data by ensuring columns were appropriately named, data types were accurate, and confirmed there were no missing values. 
 
