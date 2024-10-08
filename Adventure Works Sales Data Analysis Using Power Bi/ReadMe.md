@@ -15,6 +15,9 @@ Powerbi
 
 ![Powerbi](https://github.com/user-attachments/assets/d705e3e8-95d9-4609-9a37-cdf7edc8b5b1)
 
+## Data Source
+The dataset can be accessed on Kaggle via this [link](https://www.kaggle.com/datasets/atulmittal199174/adventure-works-dataset)
+
 ## Data Cleaning
 
 The raw dataset, provided in .csv format, was imported directly into Power BI, comprising eight separate tables. After an initial review, I identified that the focus would be on Sales and Returns data. I cleaned the data by ensuring columns were appropriately named, data types were accurate, and confirmed there were no missing values. I then started exploring potential relationships between the tables.
