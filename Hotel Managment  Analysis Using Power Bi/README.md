@@ -15,6 +15,9 @@ Powerbi
 
 ![Powerbi](https://github.com/user-attachments/assets/d705e3e8-95d9-4609-9a37-cdf7edc8b5b1)
 
+## Data Source
+Datasets can be found on Code Basics website by clicking this [link](https://codebasics.io/resources/end-to-end-data-analyst-project)
+
 ## Data Cleaning
 
 - The raw dataset, provided in .csv format, was imported directly into Power BI, comprising Five tables.
