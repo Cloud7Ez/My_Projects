@@ -13,6 +13,9 @@ Powerbi
 
 ![Powerbi](https://github.com/user-attachments/assets/d705e3e8-95d9-4609-9a37-cdf7edc8b5b1)
 
+## Data Source
+The dataset can be accessed on Kaggle via this [link](https://data.world/vizwiz/superstore-2023)
+
 ## Data Cleaning
 
 - The raw dataset, provided in .xls format, was imported directly into Power BI, it has three sheets but for analysis I imported orders sheet.
