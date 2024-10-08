@@ -17,7 +17,8 @@ In this SQL project, I took on the role of an eCommerce Database Analyst for Mav
 
 
 ------------------------------------------------------
-
+## Date Source
+Dataset can be found on kaggle by clicking this [link](https://www.kaggle.com/datasets/lenhatnam2810/mavenfuzzyfactory)
 ## Overview of the Maven Fuzzy Factory Database
 
 ![Maven FuzzyFactory Database Schema](https://github.com/user-attachments/assets/d342a5a4-ed70-44d1-b29f-92d33834681d)
