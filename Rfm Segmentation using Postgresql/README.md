@@ -21,6 +21,9 @@
 ## Tech Stack Used 
 ![postgresql](https://github.com/user-attachments/assets/f6bbc644-8a7c-4b8c-b278-8a05f31c23d8)
 
+## Data Source
+The dataset can be accessed on Kaggle via this [link](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
+
   ------------------------------------------------------
 
 ```sql
@@ -28,8 +31,6 @@
 select count(distinct customername) unique_customers 
 		from sales;
 ```
-## Data Source
-The dataset can be accessed on Kaggle via this [link](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)
 **Output:**   
 
  ![Unique customers](https://github.com/user-attachments/assets/a5f829dd-2865-47d3-a5d0-833224dbeced)
