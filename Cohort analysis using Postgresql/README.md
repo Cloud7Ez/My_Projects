@@ -74,8 +74,8 @@ The dataset comprises of 10,83,818 rows and 8 columns.There are a number of miss
 
 ```
 select *
-		from retail
-			where customerid is not null; --8,13,658
+	from retail
+	where customerid is not null; --8,13,658
 ```            
 **Output:**
 ![4](https://github.com/user-attachments/assets/2ff2b65a-a714-447b-8ba1-1be902e11144)
@@ -113,7 +113,7 @@ dup_check as (
 )
 -- insert the clean data (non-duplicate rows) into a temporary table
 select 
-    * 
+    *
 	into temp table retail_clean
 		from dup_check
 			where dup = 1;
