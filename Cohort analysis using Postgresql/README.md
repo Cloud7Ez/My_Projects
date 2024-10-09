@@ -62,6 +62,7 @@ select *
 	where customerid is null;
 ```
 **Output:**
+
 ![1](https://github.com/user-attachments/assets/b7ee0be6-36c6-45e8-aefb-a9f1da65fa99)
 ![3](https://github.com/user-attachments/assets/14c89263-64f5-4967-8e5d-7343748448db)
 ![2](https://github.com/user-attachments/assets/3d828acf-e5ce-4a9f-84ec-820122bb8931)
@@ -78,6 +79,7 @@ select *
 	where customerid is not null; --8,13,658
 ```            
 **Output:**
+
 ![4](https://github.com/user-attachments/assets/2ff2b65a-a714-447b-8ba1-1be902e11144)
 
 The filtered result set contains 8,13,658 records. In order to narrow the focus to the most relevant records, we will filter the records to only include those where the unit price and quantity is greater than zero.
@@ -125,6 +127,7 @@ select *
 
 ```  
 **Output:**
+
 ![5](https://github.com/user-attachments/assets/5262c1f0-60ca-4275-b350-48cfc8969fa4)
 
 The retail cte filters the retail dataset, excluding rows where customerid is NULL, meaning only records with valid customer IDs are kept.The quantity_unit_price cte filters the dataset further to retain only records with positive quantity and unitprice. Any rows with non-positive values for these fields are removed, ensuring data integrity.The dup_check cte uses the ROW_NUMBER() window function to check for duplicate rows.The partition by invoiceno, stockcode, quantity clause groups the data by these columns.
@@ -157,6 +160,7 @@ select *
 
 ```
 **Output:**
+
 ![6](https://github.com/user-attachments/assets/dff243a8-6082-4731-badf-494e34214975)
 
 In the initial cohort analysis, we’ll first identify each customer by their unique ID (CustomerID) and link it to the date they made their first purchase. Then, we’ll assign each customer a cohort date, which is simply the first day of the month when they made that first purchase.
@@ -208,6 +212,7 @@ select *
 		order by cohort_date ;
 ```
 **Output:**
+
 ![7](https://github.com/user-attachments/assets/4448f8c8-2693-487a-9930-cb1f5743394e)
 
 This CTE, named cte, joins the retail_clean and cohort tables based on CustomerID. It retrieves all the records (o.*) from retail_clean and also fetches the cohort_date from the cohort table.It then extracts the year and month from the invoicedate (the transaction date) and the cohort_date (the customer's purchase month).Additionally, it calculates the revenue for each transaction by multiplying quantity by unitprice, rounding the result to two decimal places.This second CTE, cte2, calculates the time difference between the invoice date and the cohort date:year_diff: The difference in years between the transaction year (invoice_year) and the cohort year (cohort_year).month_diff: The difference in months between the transaction month (invoice_month) and the cohort month (cohort_month).This final part calculates the cohort index, which indicates how many months have passed since the customer's first purchase.
@@ -283,6 +288,7 @@ select
 		from cohort_pivot1;
 ```
 **Output:**
+
 ![9](https://github.com/user-attachments/assets/0a44b155-85d0-4055-b953-a0c2cab400bf)
 
 The resulting table provides insight on the number of customers who have continued to use a product or service over time, which can be further analyzed through the calculation of retention rates.
@@ -310,6 +316,7 @@ select
 from cohort_pivot1;	
 ```
 **Output:**
+
 ![10](https://github.com/user-attachments/assets/e0e5f777-913d-4a25-b6f2-dbc9208c6a89)
 
 The resulting table provides insight on the retention rate of customers who have continued to use a product or service over time.
@@ -368,6 +375,7 @@ select cohort_date,
 			order by cohort_date;
 ```            
 **Output:**
+
 ![12](https://github.com/user-attachments/assets/5f6867f2-63a6-4369-9c1b-7e12b4577279)
 
 The resulting table provides insight on the Churn Rate of customers who have stopped  using our product or service over time.
@@ -433,6 +441,7 @@ from cohort_pivot2;
 
 ```
 **Output:**
+
 ![13](https://github.com/user-attachments/assets/49c4614a-1859-4108-9f89-8261c24af877)
 
 The resulting table provides insight about retention on Revenue level .
@@ -497,6 +506,7 @@ select
 from cohort_pivot3;
 ```
 **Output:**
+
 ![14](https://github.com/user-attachments/assets/089e36db-5018-4590-8086-147da319c7a3)
 
 The resulting table provides insight about retention on Order level .
