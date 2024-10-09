@@ -51,7 +51,7 @@ create table retail (
 ```
 select * 
 	from retail
-         limit 10;
+         	limit 10;
 
 select count(*)	
 	from retail; -- 10,83,818
