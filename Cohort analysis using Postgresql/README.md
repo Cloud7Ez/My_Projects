@@ -54,7 +54,7 @@ select *
          	limit 10;
 
 select count(*)	
-	from retail; -- 10,83,818
+	from retail; --  5,41,909
 
 
 select * 
@@ -64,7 +64,7 @@ select *
 **Output:**
 
 ![1](https://github.com/user-attachments/assets/b7ee0be6-36c6-45e8-aefb-a9f1da65fa99)
-![3](https://github.com/user-attachments/assets/14c89263-64f5-4967-8e5d-7343748448db)
+![2](https://github.com/user-attachments/assets/7d2736a6-23fd-41c9-bcc6-aa7c818b2dd4)
 ![2](https://github.com/user-attachments/assets/3d828acf-e5ce-4a9f-84ec-820122bb8931)
 
 The dataset comprises of 10,83,818 rows and 8 columns.There are a number of missing records in the customerID column.So my first task was to handle the missing data by filtering the result set to exclude records where the customerID is null.
